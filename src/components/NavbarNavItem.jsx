@@ -4,10 +4,13 @@ const NavbarNavItem = ({ label, active, handleActive }) => {
   return (
     <Link
       to={ label === "Home" ? "/" : "/".concat(label) }
-      className={`h-full px-3 flex items-center hover:cursor-pointer hover:text-pink-600 ${active ? 'text-pink-700' : ''}`}
+      className={`
+        h-full px-3 flex items-center hover:cursor-pointer 
+        hover:text-pink-600 ${active ? 'text-pink-600' : ''}
+      `}
       onClick={handleActive}
     >
-      <span className="text-lg font-light">
+      <span className="text-lg">
         {label}
       </span>
     </Link>
