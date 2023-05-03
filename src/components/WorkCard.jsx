@@ -1,6 +1,7 @@
 import { FaEye, FaCode } from "react-icons/fa";
 
 const WorkCard = ({ image, name, repo, demo }) => {
+
   return (
     <div
       style={{ backgroundImage : `url(${image})` }} 

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { IoIosWarning } from "react-icons/io";
 import { Grid } from "@agney/react-loading";
 
-
 const Work = () => {
 
   const [projects, setProjects] = useState([]);
@@ -35,7 +34,7 @@ const Work = () => {
       });
     }, 2000)
   }, []);
-
+  
   return (
     <WorkLayout>
       <div className="flex flex-col space-y-2">
@@ -66,7 +65,9 @@ const Work = () => {
       {
         projects
         &&
-        <div className="mx-auto min-w-fit mt-6 mb-14 flex flex-col items-center lg:grid lg:grid-cols-2 2xl:grid-cols-3 gap-8">
+        <div
+          className="mx-auto min-w-fit mt-6 mb-14 flex flex-col items-center lg:grid lg:grid-cols-2 2xl:grid-cols-3 gap-8"
+        >
           {
             projects.map((project) => (
               <WorkCard 
