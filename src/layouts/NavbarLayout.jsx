@@ -11,4 +11,4 @@ const NavbarLayout = ({ children }) => {
   );
 }
  
-export default NavbarLayout;
+export default NavbarLayout; 
